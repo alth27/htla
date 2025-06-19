@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Page - My Pet Pride</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Showing off My Pet</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="mypage.html">MY PAGE</a></li>
+        <li><a href="signin.html">SIGN IN</a></li>
+        <li><a href="signup.html">SIGN UP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mypage">
+    <section class="user-info">
+      <h2>로그인된 사용자 정보</h2>
+      <p><strong>아이디:</strong> petlover123</p>
+      <p><strong>이름:</strong> 김멍냥</p>
+      <p><strong>이메일:</strong> petlover@example.com</p>
+    </section>
+
+    <hr>
+
+    <section class="write-post">
+      <h2>새 글 작성하기</h2>
+      <form>
+        <label>제목:</label><br>
+        <input type="text" name="title" placeholder="제목 입력" style="width: 100%;"><br><br>
+        <label>내용:</label><br>
+        <textarea name="content" rows="5" placeholder="우리집 강아지/고양이를 자랑해보세요!" style="width: 100%;"></textarea><br><br>
+        <label>사진 첨부:</label><br>
+        <input type="file" accept="image/*"><br><br>
+        <button type="submit">업로드</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <section class="my-posts">
+      <h2>내가 올린 글</h2>
+
+      <div class="post">
+        <h3>산책 가는 우리 아기 인절미 🐶</h3>
+        <img src="dog1.png" alt="아기 인절미" style="width:200px;">
+        <p>오늘은 날씨가 좋아서 산책했어요~</p>
+      </div>
+
+      <div class="post">
+        <h3>치즈 돈까스 고양이 🐱</h3>
+        <img src="cat2.jpg" alt="라떼" style="width:200px;">
+        <p>하루 종일 잠만 자는 우리 라떼... 너무 귀여워요 😽</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 20231290 신미소 Showing off My Pet</p>
+  </footer>
+</body>
+</html>

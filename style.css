@@ -1,0 +1,99 @@
+.gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 가로 3개 */
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .pet-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .pet-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      padding: 20px;
+      background: #f0f0f0;
+      text-align: center;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: gray;
+      font-weight: bold;
+    }
+
+    aside {
+      float: left;
+      width: 150px;
+      padding: 20px;
+      background: #fcfcf7;
+      height: 100%;
+    }
+
+    main {
+      margin-left: 180px;
+      padding: 20px;
+    }
+
+    /* aside 전체 스타일 */
+aside {
+  float: left;
+  width: 150px;
+  padding: 20px;
+  background: #fcfcf7;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* 카테고리 리스트 네모 스타일 */
+.category-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.category-list li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid gray;
+  border-radius: 8px;
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.category-list li a:hover {
+  background-color: aquamarine;
+  color: white;
+}
